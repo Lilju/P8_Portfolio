@@ -264,8 +264,8 @@ main {
 }
 
 .about__desc {
-  font-size: 1rem;
-  max-width: 600px;
+  font-size: 1.2rem;
+  max-width: 1000px;
 }
 
 .about__desc,
@@ -338,6 +338,13 @@ main {
 
 .contact {
   flex-direction: column;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 30px;
 }
 
 .footer {
