@@ -130,7 +130,6 @@ button {
 
 .link--nav {
   color: var(--clr-fg);
-  text-transform: lowercase;
   font-weight: 500;
 }
 
@@ -218,6 +217,9 @@ button {
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.7s 1s ease-out forwards;
 }
 
 main {
@@ -226,8 +228,17 @@ main {
   margin: 0 auto;
 }
 
+@keyframes apparition {
+  100%{
+      opacity: 1;
+      transform: none;
+  }
+}
+
 .section {
   margin-top: 5em;
+  opacity: 0;
+  animation: apparition 3s 4s ease-out forwards;
 }
 
 .section__title {
@@ -253,6 +264,9 @@ main {
 .about {
   flex-direction: column;
   margin-top: 3em;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: apparition 1.5s 2s ease-out forwards;
 }
 
 .about__name {
@@ -314,7 +328,6 @@ img {
   border-radius: 5px;
   object-fit: cover;
   object-position: left top;
-  cursor: pointer;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 3px 4px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
